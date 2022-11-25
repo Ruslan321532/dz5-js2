@@ -377,12 +377,13 @@ body,
   padding: 20px 29px 34px 30px;
   width: 205px;
   height: 380px;
-}
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);}
 .main__assort-mainContent-shoes:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 11px 5px rgba(0, 0, 0, 0.1);
+          color: rgb(228, 47, 231);
 }
 .main__assort-mainContent-favorites {
   display: inline-block;
@@ -391,7 +392,7 @@ body,
   border-radius: 7px;
   padding: 9.6px 9.07px 3.59px;
   cursor: pointer;
-  background-color: red;
+
 }
 
 .main__assort-mainContent-favorites:hover {
@@ -415,7 +416,7 @@ body,
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: black;
+  color: rgb(255, 0, 0);
 }
 .main__assort-mainContent-product-category {
   font-family: "inter", sans-serif;
@@ -463,7 +464,6 @@ body,
   border-radius: 8px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);  
 }
 .main__assort-mainContent-product-pricesDesc-addBask:hover {
   -webkit-transform: scale(1.13);
@@ -471,6 +471,8 @@ body,
   background-color: rgba(253, 239, 239, 0.87);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);  
+
 }
 .main__assort-mainContent-product-pricesDesc-addBask-active {
   cursor: pointer;
@@ -951,22 +953,20 @@ body,
   background-color: #3cc755;  
   color: white;
 }
-.main__assort-select-brand {
-  background: -webkit-linear-gradient(90deg, #d6ea2d,#85ed23,#5abb7a);
-  cursor: pointer;
-  min-height: 45px;
-  max-height: 300px;
-  border-radius: 30px;
-  background-color: rgb(250, 250, 250);
-  box-shadow: 2px 4px 8px #c5c5c5;
-  transition: all 300ms;
-  overflow-y: scroll;
-  height: 40px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 6px;
-  transition: all 300ms;
-  background-color: #3cc755;  
-  color: white;
-
-}
+.main__assort-select-brands {
+ /* height: 40px; */
+ background: -webkit-linear-gradient(90deg, #d6ea2d,#85ed23,#5abb7a);
+ cursor: pointer;
+ min-height: 45px;
+ max-height: 300px;
+ border-radius: 30px;
+ box-shadow: 2px 4px 8px #c5c5c5;
+ transition: all 300ms;
+ overflow-y: scroll;
+ height: 40px;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 6px;
+ transition: all 300ms;
+ background-color: #3cc755;  
+ color: white;}
