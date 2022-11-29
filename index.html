@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sneakers</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
   <body>
@@ -39,6 +37,7 @@
               </div>
             </div>
             <div class="header__links">
+              <div class="modalbask">
               <p class="header__links-basket">
                 <span class="header__links-basket-logo"
                   ><svg
@@ -90,10 +89,11 @@
                     />
                   </svg> </span
               ></a>
-              
+              <div class="div_css">
               <p class="header__links-user">
-                <a href="./src/pages/login.html">Войти</a>
+                <a href="./src/pages/loginusers.html">Войти</a>
               </p>
+            </div>
             </div>
           </nav>
         </div>
@@ -112,7 +112,6 @@
               </div>
             </div>
           </div>
-
           <div class="basket__bottom">
             <div class="basket__text">
               <p class="basket__text-desc">Итого:</p>
@@ -127,7 +126,24 @@
             <button class="basket__btn">Оформить заказ</button>
           </div>
         </div>
-      </aside>
+      </aside> 
+          <!--end-->
+          <!-- <div class="BasketWindow">
+            <div class="BasketContent">
+              <img src="./src/images/image 8.svg" alt="" class="BasketNoneImg"/>
+              <p class="BasketNoneTitle">
+                Корзина пустая
+              </p>
+              <p class="BasketNoneTitle">
+                Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.
+              </p>
+              <button class="BasketReturn">
+                Вернуться назад
+              </button>
+            </div>
+          </div>
+        </div>
+      </aside> -->
       <!-- basket end -->
       <main class="main">
         <section class="main__swipe">
@@ -245,7 +261,6 @@
                             >Forever!</span
                           >
                         </p>
-                        <a href="" class="main__swipe-box-btn">купить</a>
                       </div>
                     </div>
                     <div class="main__swipe-box main__swipe-box-scn">
@@ -420,6 +435,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./src/js/swiper.js"></script>
     <script type="module" src="./src/js/main.js"></script>
-
+    <script type="module" src="/src/js/like.js"></script>
   </body>
 </html>
