@@ -18,12 +18,22 @@ let basketList = document.querySelector('.basket__cards')
 //basket
 let basketData = []
 
+if(localStorage.getItem('basket') !== null) {
+  basketData =  JSON.parse(localStorage.getItem('basket'))
+
+}
+
 let url = 'http://localhost:8080/shoes?'
 let filterPrice = ''
 let filterCategory = ''
 let filterGender = ''
 let filterBrands = ''
 let filterSearchValue = ''
+let emptyBasketTest = ''
+
+const setLocalStorage = () => {
+  localStorage.setItem('basket', JSON.stringify(basketData))
+}
 
 const getShoes = () => {
   shoesList.innerHTML = ''
@@ -90,8 +100,7 @@ const getShoes = () => {
 
       Array.from(addFavoriteBtns).forEach((item) => {
         item.addEventListener('click', () => {
-          basketData = [...basketData, resolve.find((el) => el.id === +item.dataset.id)]
-        getShoes()
+          getShoes()
         })
       })
 ////////////
@@ -118,9 +127,6 @@ const getShoes = () => {
     getBasket()
 }
 
-
-
-
 const getBasket = () => {
   basketList.innerHTML = ''
   basketData.forEach((item) => {
@@ -146,6 +152,29 @@ const getBasket = () => {
 
 getBasket()
 
+function emptyBasket(){
+  if(emptyBasketTest === ''){
+      basketContent.innerHTML = 
+          `
+          <div class="BasketWindow">
+          <div class="BasketContent">
+            <img src="./src/images/image 8.svg" alt="" class="BasketNoneImg"/>
+            <p class="BasketNoneTitle">
+              Корзина пустая
+            </p>
+            <p class="BasketNoneTitle">
+              Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.
+            </p>
+            <button class="BasketReturn">
+              Вернуться назад
+            </button>
+          </div>
+        </div>
+          `
+  }else{
+      getBasket()
+  }
+}
 
 
 
@@ -199,45 +228,3 @@ basketContent.addEventListener('click', (e) => {
 });
 
 getShoes()
-
-
-// let addProduct = document.querySelector('.addCart')
-// console.log(addProduct);
-
-// let BasketWindow = document.querySelector('.BasketWindow')
-
-// addProduct.addEventListener('click' , () => {
-//   BasketWindow.remove()
-// })
-
-    // let addCartBtns = document.querySelectorAll('.addCart');
-    // let addFavoriteBtns = document.querySelectorAll('.addFavorite');
-    // let removeFavoriteBtns = document.querySelectorAll('.removeFavorite');
-    // let removeCartBtns = document.querySelectorAll('.removeCart');
-
-    // Array.from(addFavoriteBtns).forEach((item) => {
-    //     item.addEventListener('click', () => {
-    //         addFavorite(resolve.find((el) => el.id === +item.dataset.id))
-    //         getShoes();
-    //         setLocalStorageFavorite()
-    //     })
-    // })
-    // Array.from(removeFavoriteBtns).forEach((item) => {
-    //     item.addEventListener('click', () => {
-    //         deleteFavorite(item.dataset.id)
-    //         getShoes();
-    //         setLocalStorageFavorite()
-    //     });
-    // });
-    // Array.from(addCartBtns).forEach((item) => {
-    //     item.addEventListener('click', () => {
-    //         addBasket(resolve.find((el) => el.id === +item.dataset.id))
-    //         getShoes();
-    //     });
-    // });
-    // Array.from(removeCartBtns).forEach((item) => {
-    //     item.addEventListener('click', () => {
-    //         deleteBasket(item, item.dataset.id)
-    //         getShoes();
-    //     });
-    // });

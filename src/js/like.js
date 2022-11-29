@@ -2,7 +2,6 @@ export let favoriteData = [
 
 ]
 
-
 if (localStorage.getItem('favorite') !== null) {
     favoriteData = JSON.parse(localStorage.getItem('favorite'));
 }
