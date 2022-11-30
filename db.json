@@ -148,9 +148,51 @@
       "email": "olivie@gmail.com",
       "password": "$2a$10$CZZaaJ5DlB0RYsOrdtTAq.CWoEY2glWV/aOMVOe3HbtEkPBglDXfa",
       "id": 6
+    },
+    {
+      "email": "rusya@gmail.com",
+      "password": "$2a$10$fr/7T41cYXEoUjYbJMYMy.LmnWsJpz1imle2NfntahkZCh.rKG4W6",
+      "login": "rusya",
+      "id": 7
+    },
+    {
+      "email": "rusya@email.com",
+      "password": "$2a$10$Gz1/VoUKOSOxVmXItzjDLuZjVPXBwl7aH72CFQbGWq5nB1G6ZfJz.",
+      "id": 8
+    },
+    {
+      "email": "rusaya@email.com",
+      "password": "$2a$10$Wkj0Z.yhKNzVez1szxw98.x4kBRRGpi1i3o9GCq3GcQx9HSU5LUDC",
+      "login": "rusa",
+      "confirm password": "21706670",
+      "id": 9
+    },
+    {
+      "email": "rusya@gmail.ru",
+      "password": "$2a$10$D87z.ND0YwJx3Mboqj5GAOzZtuz42eOMyDPN9/1tQVdL.diSeqHz2",
+      "id": 10
+    },
+    {
+      "email": "rusyea@gmail.ru",
+      "password": "$2a$10$MgHQC.4CRfz.ucwAwMBW.etC2Gj/evNAUnOWs0jKZ/qZAy2LCBnr2",
+      "id": 11
+    },
+    {
+      "email": "rusyeaad@gmail.ru",
+      "password": "$2a$10$r0phG423lPirvh7skv4TR.ddrRf364rvviK71TwmTvnNvd428aLwO",
+      "id": 12
+    },
+    {
+      "email": "masksarteaad@gmail.ru",
+      "password": "$2a$10$nyFbfnQGLuXn/TzFj.C/6.LfeGycpZ79KPSc4XZZZEr6wG4LZ1xq2",
+      "id": 13
+    },
+    {
+      "email": "rusyaw@email.com",
+      "password": "$2a$10$5GSVodw1DubCIfPsEOzJw.fMhQDnQ65Iek4wQNZMRfnoqm8cz86nG",
+      "login": "rusya",
+      "id": 14
     }
   ],
-  "login":[
-    
-  ]
+  "login": []
 }
